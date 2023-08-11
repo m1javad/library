@@ -1,0 +1,1 @@
+$(document).on("click","nav .dropdown-menu",(function(o){o.stopPropagation()})),$(document).on("click","Dropdown3",(function(){document.getElementsByClassName("dropdown-menu").stopPropagation()}));
