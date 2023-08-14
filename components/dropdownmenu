@@ -86,7 +86,8 @@ const raigan=[
      raiganmenu.eventcreature("raigan",raiganmenu.createmenu);
 
      const soutimenu = menucreatore(souti);
-     soutimenu.eventcreature("souti",soutimenu.createmenu);}
+     soutimenu.eventcreature("souti",soutimenu.createmenu);
+    }
 
 
 
