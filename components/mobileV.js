@@ -1,5 +1,6 @@
 import  movefunc from "./elementmove"
-
+let mobilestyleadded
+let mobilestyleremoved
 
 function applyStylesOnScreenSize() {
     const navbarHeader = document.querySelector('.navbar-header');
@@ -45,35 +46,58 @@ function applyStylesOnScreenSize() {
         inputGroup.style.position = '';
     }
 
-    function handleResize() {
-        console.log(screen.width)
-        if (screen.width  > 768) {
-            removeStyles1();
-            removeStyles2();
-        }
+    function applyStyles2() {
+        movefunc.moveAllElements("navbarcollapse","login");
+        movefunc.createSecondNavbarMobile();
+        movefunc.moveAllElements("input-group-mobile","input-group")
+
+    }
+    function removeStyles2() {
+        movefunc.moveAllElements("input-group","input-group-mobile")
+        const parentElement = document.getElementById("nav2");
+        parentElement.innerHTML=""
+    }
+    function mobilestyleadd(){
+        if(mobilestyleadded==1){return}
         else{
-            applyStyles2();
-            applyStyles1();} 
+            applyStyles1();
+            applyStyles2(); 
+            mobilestyleadded = 1
+            mobilestyleremoved = 0
+
+        }
+    }
+    function mobilestyleremove(){
+        if(mobilestyleremoved==1){return}
+        else{
+            removeStyles1()
+            removeStyles2()
+            mobilestyleremoved = 1
+            mobilestyleadded = 0
+
+        }
+    }
+
+    
+
+    let added
+    function handleResize() {
+        if (screen.width  > 768) {
+            mobilestyleremove();
+        }
+        
+        else{
+               mobilestyleadd();
+        } 
     }
 
     window.addEventListener('resize', handleResize);
     
     handleResize();
 }
+
   
    
-    function applyStyles2() {
-        movefunc.moveAllElements("navbarcollapse","login");
-        movefunc.createSecondNavbarMobile();
-        movefunc.moveElementToParent("input-group","input-group-mobile")
-
-    }
-
-    function removeStyles2() {
-        movefunc.moveElementToParent("input-group","navbarheader")
-        movefunc.undocreateSecondNavbarMobile("nav2")
-
-    }
 
     
 

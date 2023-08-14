@@ -69,8 +69,7 @@ margin-left: 0px !important;
     color: #00A2A4 !important;
     transition: 0.2s;
  }
- .navbar-toggleC{
- }
+
 .cartC{
     display: flex;
     align-items: center;
@@ -145,6 +144,10 @@ background-color: #c5c5c50c;
     justify-content: center;
     align-items: center;
     padding: 0;
+    
+}
+.nav2{
+    height: 30px;
 }
 
 mobile

@@ -6,9 +6,8 @@ while (oldPar.childNodes.length > 0) {
 newPar.appendChild(oldPar.childNodes[0]);
   }
 }
-let secondnavbar
+
 function createSecondNavbarMobile(){
-  if(secondnavbar!=1){
   const parentElement = document.getElementById("nav2");
   const ulElement = document.createElement("ul");
   ulElement.className = "nav3";
@@ -18,10 +17,10 @@ function createSecondNavbarMobile(){
   secondchild.id = "input-group-mobile";
   ulElement.appendChild(secondchild);
   parentElement.appendChild(ulElement);
-  secondnavbar = 1}
-  else{return}
+}
 
-    }
+
+    
 
 
 
@@ -36,9 +35,9 @@ function createSecondNavbarMobile(){
 
     function undocreateSecondNavbarMobile(element){
 
-      const element = document.getElementById(element);
+      const elementt = document.getElementById(element);
      
-        element.parentNode.removeChild(element);
+        elementt.parentNode.removeChild(elementt);
       
       
     }

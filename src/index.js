@@ -11,5 +11,5 @@ $(document).on('click', 'nav .dropdown-menu', function (e) {
   });
 
   
-LoadMobilePage.applyStylesOnScreenSize();
-LoadCategory();
+  LoadMobilePage.applyStylesOnScreenSize();
+  LoadCategory()
