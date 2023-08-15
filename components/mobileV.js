@@ -66,11 +66,15 @@ function applyStylesOnScreenSize() {
         const parentElement = document.getElementById("nav2");
         parentElement.innerHTML=""
     }
+    
+    
+
+    
     function mobilestyleadd(){
         if(mobilestyleadded==1){return}
         else{
             applyStyles1();
-            applyStyles2(); 
+            applyStyles2();
             mobilestyleadded = 1
             mobilestyleremoved = 0
 
@@ -79,6 +83,7 @@ function applyStylesOnScreenSize() {
     function mobilestyleremove(){
         if(mobilestyleremoved==1){return}
         else{
+            closenav();
             removeStyles1()
             removeStyles2()
             mobilestyleremoved = 1
@@ -86,12 +91,8 @@ function applyStylesOnScreenSize() {
 
         }
     }
-
-    
-
-    let added
     function handleResize() {
-        if (screen.width  > 768) {
+        if (window.innerWidth  > 768) {
             mobilestyleremove();
         }
         
@@ -99,14 +100,35 @@ function applyStylesOnScreenSize() {
                mobilestyleadd();
         } 
     }
+    
 
     window.addEventListener('resize', handleResize);
-    
+    document.getElementById('togglenavbar').addEventListener("click",opennav);
+    document.getElementById('closebtn').addEventListener("click",closenav);
+
     handleResize();
 }
 
-  
-   
+function opennav(){
+        
+    movefunc.moveAllElements("burgermenu","navbarcollapse");
+    document.getElementById("burgermenu").style.right='0'
+    document.getElementById("Blurwhole").style.display='flex'
+    document.getElementById("navbarfixed").style.position='static'
+    document.getElementById("closebtn").style.display='flex'
+
+
+}
+function closenav(){
+    movefunc.moveAllElements("navbarcollapse","burgermenu",);
+    document.getElementById("burgermenu").style.right='-45vw'
+    setTimeout(function(){document.getElementById("Blurwhole").style.display='none'
+    document.getElementById("navbarfixed").style.position='fixed'
+    document.getElementById("closebtn").style.display='none'}, 300);
+
+}
+
+
 
     
 
@@ -116,5 +138,5 @@ function applyStylesOnScreenSize() {
   
 
 
-export default {applyStylesOnScreenSize};
+export default {applyStylesOnScreenSize,opennav,closenav};
 ;
