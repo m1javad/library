@@ -9,8 +9,12 @@ function applyStylesOnScreenSize() {
     const navbarToggleC = document.querySelector('.navbar-toggleC');
     const cartC = document.querySelector('.cartC');
     const inputGroup = document.querySelector('#input-group');
+    const searchbar = document.querySelector('#search-bar');
+
 
     function applyStyles1() {
+        searchbar.style.width='85vw';
+        navbarHeader.style.gap = '0px';
         navbarHeader.style.display = 'grid';
         navbarHeader.style.gridTemplate = '1fr/1fr 3fr 1fr';
         lefts.style.gridArea = '1/1/2/2';
@@ -29,6 +33,8 @@ function applyStylesOnScreenSize() {
     }
 
     function removeStyles1() {
+        searchbar.style.width='65vw'
+        navbarHeader.style.gap = '25px';
         navbarHeader.style.display = '';
         navbarHeader.style.gridTemplate = '';
         lefts.style.gridArea = '';
@@ -53,6 +59,7 @@ function applyStylesOnScreenSize() {
 
     }
     function removeStyles2() {
+        movefunc.moveAllElements("","");
         movefunc.moveAllElements("input-group","input-group-mobile")
         const parentElement = document.getElementById("nav2");
         parentElement.innerHTML=""
