@@ -69,7 +69,6 @@ const raigan=[
 
 
      function LoadCategory(){
-
      const adabiatmenu = menucreatore(adabiat);
      adabiatmenu.eventcreature("adabiat",adabiatmenu.createmenu);
 
