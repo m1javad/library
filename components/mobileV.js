@@ -59,7 +59,9 @@ function applyStylesOnScreenSize() {
 
     }
     function removeStyles2() {
-        movefunc.moveAllElements("","");
+        const child = document.getElementById("loginbotton");
+        const PP = document.getElementById('login')
+        PP.appendChild(child);
         movefunc.moveAllElements("input-group","input-group-mobile")
         const parentElement = document.getElementById("nav2");
         parentElement.innerHTML=""
