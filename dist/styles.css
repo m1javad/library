@@ -9,10 +9,10 @@
 
   @font-face {
     font-family: 'iranyekan';
-    src: url('../fonts/Yekan/Yekan.eot') format('embedded-opentype'), /* Internet Explorer */
-         url('../fonts/Yekan/Yekan.woff') format('woff'),              /* Pretty Modern Browsers */
-         url('../fonts/Yekan/Yekan.ttf') format('truetype'),          /* Safari, Android, iOS */
-         url('../fonts/Yekan/Yekan.svg') format('svg');               /* Legacy iOS */
+    src: url('fonts/Yekan/Yekan.eot') format('embedded-opentype'), /* Internet Explorer */
+         url('fonts/Yekan/Yekan.woff') format('woff'),              /* Pretty Modern Browsers */
+         url('fonts/Yekan/Yekan.ttf') format('truetype'),          /* Safari, Android, iOS */
+         url('fonts/Yekan/Yekan.svg') format('svg');               /* Legacy iOS */
 }
 
 /*clear defaults*/
