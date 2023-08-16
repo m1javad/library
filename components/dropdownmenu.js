@@ -35,6 +35,19 @@ const ravanshenasi=[
     "روانشناسی",
     "روانشناسی",
     "روانشناسی",
+    "روانشناسی",
+    "روانشناسی",
+    "روانشناسی",
+    "روانشناسی",
+    "روانشناسی",   
+    "روانشناسی",
+    "روانشناسی",
+    "روانشناسی",
+    "روانشناسی",    
+    "روانشناسی",
+    "روانشناسی",
+    "روانشناسی",
+    "روانشناسی",
 ]
 const raigan=[
     "رایگان",
@@ -54,6 +67,7 @@ const raigan=[
           for (var i = 0; i < arr.length; i++){
           const childElement = document.createElement("li");
           const childerElement = document.createElement("a");
+          childElement.href="#"
           childElement.appendChild(childerElement);
 
           childerElement.textContent = arr[i]
@@ -65,7 +79,29 @@ const raigan=[
           }
           return{eventcreature,createmenu}
      }
+     function addevent(action,element,funcname){
+        document.getElementById(element).addEventListener(action,funcname)
+      }
      
+     function opendropdown(){
+        document.getElementById("dropdownc").style.display="flex"
+        document.getElementById("dropdown3").style.display="flex"
+     }
+     function closedropdown(){
+        document.getElementById("dropdownc").style.display="none"
+        document.getElementById("dropdown3").style.display="none"
+     }
+     let dropdownopen = false;
+     function toggledropdown(){
+        if(!dropdownopen){
+            opendropdown();
+            dropdownopen=true
+        }else{
+            closedropdown();
+            dropdownopen=false;
+        }
+        
+     }
 
 
      function LoadCategory(){
@@ -83,9 +119,10 @@ const raigan=[
 
      const raiganmenu = menucreatore(raigan);
      raiganmenu.eventcreature("raigan",raiganmenu.createmenu);
+     addevent("click","dropdownbotton",toggledropdown);
 
-     const soutimenu = menucreatore(souti);
-     soutimenu.eventcreature("souti",soutimenu.createmenu);
+
+ 
     }
 
 
