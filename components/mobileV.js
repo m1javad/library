@@ -10,6 +10,7 @@ function applyStylesOnScreenSize() {
     const cartC = document.querySelector('.cartC');
     const inputGroup = document.querySelector('#input-group');
     const searchbar = document.querySelector('#search-bar');
+    const dropdownbotton = document.querySelector('#dropdownbotton');
 
 
     function applyStyles1() {
@@ -56,7 +57,7 @@ function applyStylesOnScreenSize() {
         movefunc.moveAllElements("navbarcollapse","login");
         movefunc.createSecondNavbarMobile();
         movefunc.moveAllElements("input-group-mobile","input-group")
-
+        dropdownbotton.style.display="none"
     }
     function removeStyles2() {
         const child = document.getElementById("loginbotton");
@@ -65,6 +66,8 @@ function applyStylesOnScreenSize() {
         movefunc.moveAllElements("input-group","input-group-mobile")
         const parentElement = document.getElementById("nav2");
         parentElement.innerHTML=""
+        dropdownbotton.style.display="flex"
+
     }
     
     
@@ -111,7 +114,7 @@ function applyStylesOnScreenSize() {
 
 function opennav(){
         
-    movefunc.moveAllElements("burgermenu","navbarcollapse");
+    movefunc.moveAllElements("mainitems","navbarcollapse");
     document.getElementById("burgermenu").style.right='0'
     document.getElementById("Blurwhole").style.display='flex'
     document.getElementById("navbarfixed").style.position='static'
@@ -120,12 +123,11 @@ function opennav(){
 
 }
 function closenav(){
-    movefunc.moveAllElements("navbarcollapse","burgermenu",);
-    document.getElementById("burgermenu").style.right='-45vw'
+    movefunc.moveAllElements("navbarcollapse","mainitems",);
+    document.getElementById("burgermenu").style.right='-280px'
     setTimeout(function(){document.getElementById("Blurwhole").style.display='none'
     document.getElementById("navbarfixed").style.position='fixed'
     document.getElementById("closebtn").style.display='none'}, 300);
-
 }
 
 

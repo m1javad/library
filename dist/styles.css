@@ -142,11 +142,11 @@ margin-right: 120px;
 
 .hamburgermenu {
     height: 100%;
-    width: 45vw;
+    width: 280px;
     position: fixed;
     z-index: 1;
     top: 0;
-    right: -45vw;
+    right: -280px;
     background-color: var(--taghche);
     overflow-x: hidden;
     transition: 0.3s;
@@ -164,7 +164,6 @@ margin-right: 120px;
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
     display: block;
     transition: 0.3s;
   }
@@ -308,6 +307,49 @@ transition: 0.3;
 ::-webkit-scrollbar-track {
   background: #dbdbdb;
 }
+
+
+.bi-dash{
+  color: white;
+  font-size: 30px;
+}
+.sidebarlogo{
+  color: rgb(0, 0, 0);
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+
+}
+.sidebarlogo:active{
+  background-color: none !important;
+}
+.sidebarlogocon{
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap:10px;
+}
+.mainitems{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+  gap:10px;
+  color: white;
+}
+.mobilehover>li{
+  border-radius: 50px;
+}
+
+.mobilehover>li:active{
+  background-color: #005052;
+  transition: 0.3;
+}
+
 
 
 /*main section */ 

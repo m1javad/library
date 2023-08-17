@@ -1,5 +1,6 @@
 import LoadMobilePage from "../components/mobileV";
 import category from "../components/dropdownmenu";
+import loadcategoryside from "../components/mobilecategory";
 /*disable closing drop down onclick */
 
 $(document).on('click', 'nav .dropdown-menu', function (e) {
@@ -9,9 +10,7 @@ $(document).on('click', 'nav .dropdown-menu', function (e) {
     document.getElementsByClassName("dropdown-menu").stopPropagation();
   });
 
- 
-  /*LoadMobilePage.applyStylesOnScreenSize();*/
-  category()
-  
+  category();
+  LoadMobilePage.applyStylesOnScreenSize();
 
   
