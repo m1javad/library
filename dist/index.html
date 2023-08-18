@@ -15,83 +15,85 @@
 
 </head>
 <body>
-    <nav class="navbar navbar-default  navbar-fixed-top " id="navbarfixed">
-        <div class="container-fluid">
-          <div class="navbar-header" id="navbarheader">
-            <div class="lefts" id="Lefts">
-                <ul class="nav navbar-nav navbar-left" id="login">
-                    <li id="loginbotton"><a href="#"> ورود</a></li>
+    <header>
+      <nav class="navbar navbar-default  navbar-fixed-top " id="navbarfixed">
+          <div class="container-fluid">
+            <div class="navbar-header" id="navbarheader">
+              <div class="lefts" id="Lefts">
+                  <ul class="nav navbar-nav navbar-left" id="login">
+                      <li id="loginbotton"><a href="#"> ورود</a></li>
+                    </ul>
+                  <img class="cartC" src="images/bag-fill.svg" alt="bag">
+              </div>
+              <div class="input-group" id="input-group">
+                  <div><input type="search" id="search-bar"   placeholder="جست و جو در کتابمن"><i class="bi bi-search"></i></div>
+              </div>
+              <button type="button" class="navbar-toggle navbar-toggleC" id="togglenavbar" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <div class="navbar-brandC" ><a class="navbar-brand" href="#" >کتابمن</a></div>
+            </div>
+          </div>
+          <ul class="nav navbar-nav navbar-right menu-two">
+              <div class="collapse navbar-collapse" id="myNavbar">
+                  <ul class="nav navbar-nav bottom-nav" id="navbarcollapse">
+                    <li><a href="#">اخرین ها</a></li>
+                    <li><a href="#">برترین ها</a></li>
+                    <li><a href="#">چاپی</a></li>
+                    <li><a href="#">صوتی</a></li>
+                    <li class="dropdown">
+                      <a class="dropdown-toggle Dropdown2" id="dropdownbotton"  href="#">دسته بندی ها<span class="caret"></span></a>
+                      <ul class="dropdown-menu dropdownC" id="dropdownc">
+                        <li><a href="#" id="raigan">کتاب های رایگان </a></li>
+                        <li><a href="#" id="adabiat">ادبیات</a></li>
+                        <li><a href="#" id="tarikh">تاریخ</a></li>
+                        <li><a href="#" id="roman">داستان و رمان</a></li>
+                        <li><a href="#" >درسی  </a></li>
+                        <li><a href="#" id="defa">دفاع مقدس</a></li>
+                        <li><a href="#" id="ravanshenasi">روانشناسی</a></li>
+                        <li><a href="#">زیان </a></li>
+                        <li><a href="#">زندگی نامه</a></li>
+                        <li><a href="#">علوم پایه</a></li>
+                        <li><a href="#">ادبیات</a></li>
+                        <li><a href="#">تاریخ</a></li>
+                        <li><a href="#">داستان و رمان</a></li>
+                        <li><a href="#">درسی و کمک درسی </a></li>
+                        <li><a href="#">دفاع مقدس</a></li>
+                        <li><a href="#">روانشناسی</a></li>
+                        <li><a href="#">زیان </a></li>
+                        <li><a href="#">زندگی نامه</a></li>
+                        <li><a href="#">علوم پایه</a></li>
+                      </ul>
+                      <ul class="dropdown3" id="dropdown3" >
+                        <div class="innerbox" id="dropdown2">
+                        </div>
+                      </ul>
+                    </li>
+      
                   </ul>
-                <img class="cartC" src="images/bag-fill.svg" alt="bag">
+                  </div>
+      
+          </ul>
+          <div id="nav2"></div>
+        </nav>
+        <div class="sidenavham">
+          <div class="blurwhole" id="Blurwhole" onclick="closenavbar"></div>
+          <div class="hamburgermenu" id="burgermenu">
+            <a href="javascript:void(0)" class="closebtn" id="closebtn">&times;</a>
+            <div class="sidebarlogocon mobilehover" ><a class="sidebarlogo" href="#" >کتابمن<img src="images/arrow.svg"></a></div>
+            <div class="mainitems mobilehover" id="mainitems"></div>
+            <div><i class="bi bi-dash"></i>
             </div>
-            <div class="input-group" id="input-group">
-                <div><input type="search" id="search-bar"   placeholder="جست و جو در کتابمن"><i class="bi bi-search"></i></div>
+            <div class="settingitems mobilehover"></div>
+            <div><i class="bi bi-dash"></i>
             </div>
-            <button type="button" class="navbar-toggle navbar-toggleC" id="togglenavbar" data-target="#myNavbar">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <div class="navbar-brandC" ><a class="navbar-brand" href="#" >کتابمن</a></div>
+            <div class="contact-items mobilehover"></div>
           </div>
         </div>
-        <ul class="nav navbar-nav navbar-right menu-two">
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav bottom-nav" id="navbarcollapse">
-                  <li><a href="#">اخرین ها</a></li>
-                  <li><a href="#">برترین ها</a></li>
-                  <li><a href="#">چاپی</a></li>
-                  <li><a href="#">صوتی</a></li>
-                  <li class="dropdown">
-                    <a class="dropdown-toggle Dropdown2" id="dropdownbotton"  href="#">دسته بندی ها<span class="caret"></span></a>
-                    <ul class="dropdown-menu dropdownC" id="dropdownc">
-                      <li><a href="#" id="raigan">کتاب های رایگان </a></li>
-                      <li><a href="#" id="adabiat">ادبیات</a></li>
-                      <li><a href="#" id="tarikh">تاریخ</a></li>
-                      <li><a href="#" id="roman">داستان و رمان</a></li>
-                      <li><a href="#" >درسی  </a></li>
-                      <li><a href="#" id="defa">دفاع مقدس</a></li>
-                      <li><a href="#" id="ravanshenasi">روانشناسی</a></li>
-                      <li><a href="#">زیان </a></li>
-                      <li><a href="#">زندگی نامه</a></li>
-                      <li><a href="#">علوم پایه</a></li>
-                      <li><a href="#">ادبیات</a></li>
-                      <li><a href="#">تاریخ</a></li>
-                      <li><a href="#">داستان و رمان</a></li>
-                      <li><a href="#">درسی و کمک درسی </a></li>
-                      <li><a href="#">دفاع مقدس</a></li>
-                      <li><a href="#">روانشناسی</a></li>
-                      <li><a href="#">زیان </a></li>
-                      <li><a href="#">زندگی نامه</a></li>
-                      <li><a href="#">علوم پایه</a></li>
-                    </ul>
-                    <ul class="dropdown3" id="dropdown3" >
-                      <div class="innerbox" id="dropdown2">
-                      </div>
-                    </ul>
-                  </li>
-                    
-                </ul>
-                </div>
-                
-        </ul>
-        <div id="nav2"></div>
-      </nav>
-      <div class="sidenavham">
-        <div class="blurwhole" id="Blurwhole" onclick="closenavbar"></div>
-        <div class="hamburgermenu" id="burgermenu">
-          <a href="javascript:void(0)" class="closebtn" id="closebtn">&times;</a>
-          <div class="sidebarlogocon mobilehover" ><a class="sidebarlogo" href="#" >کتابمن<img src="images/arrow.svg"></a></div>
-          <div class="mainitems mobilehover" id="mainitems"></div>
-          <div><i class="bi bi-dash"></i>
-          </div>
-          <div class="settingitems mobilehover"></div>
-          <div><i class="bi bi-dash"></i>
-          </div>
-          <div class="contact-items mobilehover"></div>
-        </div>
-      </div>
-    <div class="mainsection">
+    </header>
+    <div class="mainsection" id="mainsection">
     </div>
       
 

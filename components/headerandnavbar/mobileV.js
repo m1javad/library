@@ -74,6 +74,8 @@ function applyStylesOnScreenSize() {
     function mobilestyleadd(){
         if(mobilestyleadded==1){return}
         else{
+            topbannermobileactive();
+
             applyStyles1();
             applyStyles2();
             mobilestyleadded = 1
@@ -84,9 +86,11 @@ function applyStylesOnScreenSize() {
     function mobilestyleremove(){
         if(mobilestyleremoved==1){return}
         else{
+            topbannermobiledeactive();
+
             closenav();
-            removeStyles1()
-            removeStyles2()
+            removeStyles1();
+            removeStyles2();
             mobilestyleremoved = 1
             mobilestyleadded = 0
 
@@ -111,11 +115,9 @@ function applyStylesOnScreenSize() {
 }
 
 function opennav(){
-        
     movefunc.moveAllElements("mainitems","navbarcollapse");
     document.getElementById("burgermenu").style.right='0'
     document.getElementById("Blurwhole").style.display='flex'
-    document.getElementById("navbarfixed").style.position='static'
     document.getElementById("closebtn").style.display='flex'
 
 
@@ -124,10 +126,100 @@ function closenav(){
     movefunc.moveAllElements("navbarcollapse","mainitems",);
     document.getElementById("burgermenu").style.right='-280px'
     setTimeout(function(){document.getElementById("Blurwhole").style.display='none'
-    document.getElementById("navbarfixed").style.position='fixed'
     document.getElementById("closebtn").style.display='none'}, 300);
 }
 
+function topbannermobileactive() {
+    const bannercontainer = document.querySelector('.bannercontainer');
+    const bannercontant = document.querySelector('.bannercontant');
+    const bannertextsection = document.querySelector('.bannertextsection');
+    const bannerline = document.querySelector('.bannerline');
+    const bannertitle = document.querySelector('.bannertitle');
+    const bannertext = document.querySelector('.bannertext');
+    const bannerappinstall = document.querySelector('.bannerappinstall');
+    const bannerbutton = document.querySelector('.bannerbutton');
+    const imagecontainer = document.querySelector('.imagecontainer');
+  
+    bannercontainer.style.alignItems = 'flex-end';
+    bannercontainer.style.height = '180px';
+  
+    bannercontant.style.alignItems = 'flex-end';
+  
+    bannertextsection.style.padding = '10px';
+    bannertextsection.style.paddingBottom = '0';
+    bannertextsection.style.height = '180px';
+    bannertextsection.style.width = '200px';
+    bannertextsection.style.gap = '0px';
+  
+   
+    bannerline.style.width = '50px';
+    bannerline.style.margin = '5px';
+    
+  
+    bannertitle.style.textAlign = 'center';
+    bannertitle.style.fontSize = '20px';
+  
+    
+  
+    bannertext.style.fontSize = '12px';
+    bannertext.style.lineHeight = '15px';
+  
+    bannerappinstall.style.marginTop = '3px';
+  
+    bannerbutton.style.width = '120px';
+    bannerbutton.style.height = '30px';
+    bannerbutton.style.padding = '2px 4px';
+    bannerbutton.style.border = '1px solid #FFFFFF';
+    bannerbutton.style.fontSize = '10px';
+  
+    imagecontainer.style.height = '150px';
+  }
+  function topbannermobiledeactive() {
+    const bannercontainer = document.querySelector('.bannercontainer');
+    const bannercontant = document.querySelector('.bannercontant');
+    const bannertextsection = document.querySelector('.bannertextsection');
+    const bannerline = document.querySelector('.bannerline');
+    const bannertitle = document.querySelector('.bannertitle');
+    const bannertext = document.querySelector('.bannertext');
+    const bannerappinstall = document.querySelector('.bannerappinstall');
+    const bannerbutton = document.querySelector('.bannerbutton');
+    const imagecontainer = document.querySelector('.imagecontainer');
+  
+    bannercontainer.style.alignItems = 'center';
+    bannercontainer.style.height = '380px';
+  
+    bannercontant.style.alignItems = 'center';
+  
+    bannertextsection.style.padding = 'unset';
+    bannertextsection.style.paddingBottom = 'unset';
+    bannertextsection.style.height = 'unset';
+    bannertextsection.style.width = 'unset';
+    bannertextsection.style.gap = '15px';
+  
+   
+    bannerline.style.width = '550px';
+    bannerline.style.margin = 'unset';
+    
+  
+    bannertitle.style.textAlign = 'unset';
+    bannertitle.style.fontSize = '38px';
+  
+    
+  
+    bannertext.style.fontSize = '25px';
+    bannertext.style.lineHeight = '35px';
+  
+    bannerappinstall.style.marginTop = '5px';
+  
+    bannerbutton.style.width = `250px`;
+    bannerbutton.style.height = '50px';
+    bannerbutton.style.padding = '8px 30px';
+    bannerbutton.style.border = '2px solid #FFFFFF';
+    bannerbutton.style.fontSize = '20px';
+  
+    imagecontainer.style.height = '380px';
+  
+  }
 
 
     
@@ -139,4 +231,3 @@ function closenav(){
 
 
 export default {applyStylesOnScreenSize,opennav,closenav};
-;
