@@ -121,6 +121,10 @@ justify-content: center;
     display: flex;
     align-items: center;
 }
+#togglenavbar{
+  border:none;
+margin-right: 0px;
+}
 
 
 /*navbar bottom section*/
@@ -343,6 +347,8 @@ transition: 0.3;
   align-items: flex-end;
   flex-direction: column;
   gap:10px;
+}
+.mainitems>li>a{
   color: white;
 }
 .mobilehover>li{
@@ -374,7 +380,7 @@ transition: 0.3;
 /*top banner */
 
 .bannercontainer{
-  background-color: #009699;
+  background-color:var(--taghche);
   width:100vw;
   display: flex;
   justify-content: center;

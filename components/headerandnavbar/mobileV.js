@@ -141,7 +141,7 @@ function topbannermobileactive() {
     const imagecontainer = document.querySelector('.imagecontainer');
   
     bannercontainer.style.alignItems = 'flex-end';
-    bannercontainer.style.height = '180px';
+    bannercontainer.style.height = '200px';
   
     bannercontant.style.alignItems = 'flex-end';
   
@@ -173,6 +173,7 @@ function topbannermobileactive() {
     bannerbutton.style.padding = '2px 4px';
     bannerbutton.style.border = '1px solid #FFFFFF';
     bannerbutton.style.fontSize = '10px';
+    bannerbutton.style.marginBottom ='28px';
   
     imagecontainer.style.height = '150px';
   }
