@@ -415,10 +415,14 @@ transition: 0.3;
   text-align: center;
   color:white;
   line-height: 25px;
-}
-.bannertext>p{
   width: 450px;
 }
+.bannertext>p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .bannerappinstall{
   margin-top: 5px;
 }

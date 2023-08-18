@@ -162,7 +162,9 @@ function topbannermobileactive() {
     
   
     bannertext.style.fontSize = '12px';
-    bannertext.style.lineHeight = '15px';
+    bannertext.style.lineHeight = '16px';
+    bannertext.style.width='200px'
+
   
     bannerappinstall.style.marginTop = '3px';
   
@@ -203,12 +205,13 @@ function topbannermobileactive() {
   
     bannertitle.style.textAlign = 'unset';
     bannertitle.style.fontSize = '38px';
-  
+    
     
   
     bannertext.style.fontSize = '25px';
     bannertext.style.lineHeight = '35px';
-  
+    bannertext.style.width='450px'
+
     bannerappinstall.style.marginTop = '5px';
   
     bannerbutton.style.width = `250px`;
