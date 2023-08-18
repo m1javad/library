@@ -57,7 +57,6 @@ function applyStylesOnScreenSize() {
         movefunc.moveAllElements("navbarcollapse","login");
         movefunc.createSecondNavbarMobile();
         movefunc.moveAllElements("input-group-mobile","input-group")
-        dropdownbotton.style.display="none"
     }
     function removeStyles2() {
         const child = document.getElementById("loginbotton");
@@ -66,7 +65,6 @@ function applyStylesOnScreenSize() {
         movefunc.moveAllElements("input-group","input-group-mobile")
         const parentElement = document.getElementById("nav2");
         parentElement.innerHTML=""
-        dropdownbotton.style.display="flex"
 
     }
     

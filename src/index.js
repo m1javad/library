@@ -1,6 +1,5 @@
-import LoadMobilePage from "../components/mobileV";
-import category from "../components/dropdownmenu";
-import loadcategoryside from "../components/mobilecategory";
+import LoadMobilePage from "../components/headerandnavbar/mobileV";
+import category from "../components/headerandnavbar/dropdownmenu";
 /*disable closing drop down onclick */
 
 $(document).on('click', 'nav .dropdown-menu', function (e) {
