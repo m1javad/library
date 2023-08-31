@@ -469,6 +469,34 @@ align-items: end;
 
 /*sub banner*/
 
+.subbannerContainer{
+  height: 135px;
+  background-color: rgba(230, 230, 230, 0.767);
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  width: 100vw;
+}
+.subbannerContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.subbannerItems{
+  width: 310px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.subbannerimage{
+  height: 60px;
+}
+.subbannerText{
+  font-size: 18px;
+}
+
 
 
 
@@ -569,7 +597,31 @@ align-items: end;
   .bannerimage{
     height: 170px;
   }
+
+/*subbaner */
+
+
+.subbannerContainer{
+  height: 80px;
+}
+.subbannerItems{
+  width: 100px;
+  gap: 2px;
+}
+.subbannerimage{
+  height: 40px;
+}
+.subbannerText{
+  font-size: 10px;
 }
 
-/*top banner*/
 
+
+
+
+
+
+
+
+
+}
